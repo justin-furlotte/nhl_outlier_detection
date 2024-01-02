@@ -15,7 +15,7 @@ from sklearn.pipeline import Pipeline
 
 
 class Tuner:
-    def __init__(self, preprocessor: ColumnTransformer, X_train: pd.DataFrame, y_train: pd.DataFrame):
+    def __init__(self, preprocessor: ColumnTransformer, X_train: pd.DataFrame, y_train: pd.Series):
         self.preprocessor = preprocessor
         self.X_train = X_train
         self.y_train = y_train
